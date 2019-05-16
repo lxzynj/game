@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="鱼C工作室|免费编程视频教学|Python教学|Web开发教学|全栈开发教学|C语言教学|汇编教学|Win32开发|加密与解密|Linux教学">
+    <meta name="description" content="鱼C工作室为大家提供最有趣的编程视频教学。">
+    <meta name="author" content="鱼C工作室">
+    <title>鱼C-扫雷游戏</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/fishc.css">
+</head>
+<body>
+<header class="site-header" role="banner">
+    <div class="wrap">
+        <h1>FishC-扫雷</h1>
+        <div class="legend">
+            <h4>操作</h4>
+            <p><strong>插旗子:</strong> <code><span class="key">alt</span>+<span class="click">click</span></code></p>
+            <p><strong>清除周围格子:</strong> <code><span class="key">shift</span>+<span
+                    class="click">click</span></code></p>
+        </div>
+    </div>
+</header>
+<main class="site-main" role="main">
+    <div class="wrap">
+        <div id="board">
+            <div class="top">
+                <div id="scoreboard">
+                    <div id="minecounter" class="counter"></div>
+                    <div>
+                        <div class="select-wrap">
+                            <select name="level" id="level">
+                                <option value="beginner">初学者</option>
+                                <option value="intermediate">进阶</option>
+                                <option value="expert" selected>大师</option>
+                            </select>
+                        </div>
+                        <button class="reset">^_^</button>
+                    </div>
+                    <div id="timer" class="counter"></div>
+                </div>
+                <div id="grid"></div>
+            </div>
+            <div class="bottom"></div>
+        </div>
+    </div>
+</main>
+
+<script src="js/fishc.js"></script>
+</body>
+</html>
