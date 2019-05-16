@@ -1,0 +1,41 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #aaa;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body {
+    overflow: visible;
+}
+
+/* for Android Native Browser bug */
+canvas {
+    background-color: #aaa;
+    vertical-align: middle;
+    opacity: 1;
+    border-top: solid 1px #000;
+}
+
+.title {
+    font-size: 24px;
+    font-family: 微软雅黑, 黑体;
+    color: #000;
+    letter-spacing: 4px;
+    margin-bottom: 4px;
+}
+
+@media all and (min-width: 480px) and (max-height: 479px) {
+    canvas {
+        -webkit-transform: translateY(-80px) rotate(-90deg);
+        -moz-transform: translateY(-80px) rotate(-90deg);
+        transform: translateY(-80px) rotate(-90deg);
+        border-top: 0;
+        border-right: solid 1px #000;
+    }
+}
